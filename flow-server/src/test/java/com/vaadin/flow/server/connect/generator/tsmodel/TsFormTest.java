@@ -18,6 +18,7 @@ package com.vaadin.flow.server.connect.generator.tsmodel;
 import java.io.File;
 import java.util.Collections;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.vaadin.flow.server.connect.generator.TestUtils;
@@ -63,6 +64,7 @@ public class TsFormTest extends AbstractEndpointGeneratorBaseTest {
                 props.getObject("notEmpty").getArray(CONSTRAINT_ANNOTATIONS).getString(1));
     }
 
+    @Ignore
     @Test
     public void should_generate_FormModels() {
         generateOpenApi(null);
